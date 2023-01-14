@@ -1,0 +1,221 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background-color: mint cream;
+}
+
+
+/*Category Theme */
+#physical {
+  background-color: orange;
+  font-weight: bold;
+  border: 2px dotted black;
+}
+
+#chemical {
+  background-color: rgba(112,173,71);
+  font-weight: bold;
+  border: 2px dotted black;
+}
+
+#calibration {
+  background-color: #55527C;
+  font-weight: bold;
+  border: 2px dotted black;
+}
+
+#qa {
+  background-color: #3D9970 ;
+  font-weight: bold;
+  border: 2px dotted black;
+}
+
+/* End of Category Theme */
+
+
+
+
+
+
+
+
+
+
+.selected {
+  background-color: navy;
+}
+
+
+
+
+
+table.catalog {
+  border: 0px;
+}
+
+div.menu {
+  width: 70%;
+  margin: auto;
+ 
+}
+  
+
+table {
+   border: 2px solid black;
+   cellpadding: 0px;
+   cellspacing: 0px;
+   width: 100%;
+   //background-color: #B30F27;
+}
+
+#title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  
+}
+
+#header {
+  background-color: #AFB6FF;
+  margin-top: 0px;
+  margin-left: 0px;
+  font-size: 18px;
+  font-family: Arial;
+  text-align: center;
+  width: 100%
+}
+#header.td {
+  text-align: center;
+}
+
+
+
+
+
+#top {
+  background-color: crimson;
+}
+
+div.test {
+  width: 85%;
+  margin: auto;
+}
+
+div.PT {
+  width: 90%;
+  margin: auto;
+}
+
+
+#end:hover {
+  font-size: 12px;
+}
+.category {
+  font-weight: bold;
+  text-align: left;
+  background-color: #C5D0D3;
+}
+
+td {
+  text-align: left;
+  cellpadding: 1px;
+}
+
+a:visited {
+
+  color: blue;
+}
+
+a:link {
+ text-decoration: none;
+}
+
+a:hover {
+  background-color: lightgreen;
+  text-decoration: none;
+}
+
+a:active {
+  background-color: purple;
+} 
+
+
+
+
+
+
+td.version {
+  text-align: center;
+}
+
+tr.work {
+  font-size: 10px;
+  font-style: italic;
+}
+
+tr.procedure {
+  background-color: #dcddff;
+}
+
+tr.PT {
+  background-color: #dcddff;
+}
+
+
+td.version {
+  text-align: center;
+
+}
+
+
+td.menu:hover {
+  background-color: #FFFFFF;
+  border: 2px dotted black;
+  
+}
+
+span.state {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #AABBCD;
+}
+span.obsolete {
+  font-weight: bold;
+  text-decoration: line-through;
+  background-color: #AA5689;
+}
+tr.separator {
+  background-color: #D8D8D8;
+  font-weight: bold;
+  text-align: left;
+}
+
+
+
+.mass {
+  background-color: #255689;
+}
+
+.temp {
+  background-color: crimson;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 0px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: navy;
+  color: white;
+  cursor: pointer;
+  padding: 17px;
+  border-radius: 0px;
+}
+
+#myBtn:hover {
+  background-color: crimson;
+}

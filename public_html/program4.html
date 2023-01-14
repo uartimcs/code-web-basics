@@ -1,0 +1,42 @@
+<html> 
+<head> 
+<title>Lab 2.2 - Q5 Program 4 - Fibonacci Numbers (with User Input and Counter)</title> 
+<script language="JavaScript"> 
+function validateInput() { 
+ var n0 = parseInt(document.FibonacciForm.input_name0.value); 
+ var n1 = parseInt(document.FibonacciForm.input_name1.value); 
+ var n2 = parseInt(document.FibonacciForm.input_name2.value); 
+ var n3 = parseInt(document.FibonacciForm.input_name3.value);  
+ var n4 = parseInt(document.FibonacciForm.input_name4.value);
+
+ if ((n0 != NaN && n0 >= 1 && n0 <= 99) && (n1 != NaN && n1 >= 1 && n1 <= 99) && (n2 != NaN && n2 >= 1 && n2 <= 99) && (n3 != NaN && n3 >= 1 && n3 <= 99) &&(n4 != NaN && n4 >= 1 && n4 <= 99))
+ return true; 
+ else { 
+ alert("The number must be between 1 and 99 (inclusive)."); 
+ setFocus(); 
+ return false; 
+ } 
+} 
+function setFocus() { 
+ document.FibonacciForm.input_name0.select(); 
+ document.FibonacciForm.input_name0.focus(); 
+} 
+</script> 
+</head> 
+<body style="padding: 25px" onload="setFocus()"> 
+<form name="FibonacciForm" method="post" action="cgi-bin/fibonacci4.cgi" 
+ onsubmit="return validateInput();"> 
+<h3>Please enter the number of Fibonacci numbers to show: (1-99)</h3> <p></p>
+<table>
+<tr>
+<th>First input:<p></p> <input name="input_name0" value="" size="10" maxlength="10" /></th>  
+<th>Second input:<p></p><input name="input_name1" value="" size="10" maxlength="10" /></th>
+<th>Third input:<p></p><input name="input_name2" value="" size="10" maxlength="10" /></th>
+<th>Fourth input:<p></p><input name="input_name3" value="" size="10" maxlength="10" /></th>
+<th>Fifth input:<p></p><input name="input_name4" value="" size="10" maxlength="10" /></th>
+</tr>
+</table>
+<p></p>
+<input type="submit" value="Show me!" /> 
+</form> 
+</body>

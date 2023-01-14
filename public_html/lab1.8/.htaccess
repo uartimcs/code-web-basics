@@ -1,0 +1,8 @@
+AuthType Basic
+AuthName "CT212 Lab 1.8 - Protecting a web directory" 
+AuthUserFile /home/students-2020/g1/s1265005/public_html/lab1.8/.myhtpasswd
+
+<LIMIT GET POST>
+require valid-user
+</LIMIT>
+ErrorDocument 401 /~s1265005/error_lab_1_8.html
